@@ -1,0 +1,867 @@
+/* Sets all elements to have 0 margin, 0 padding and to use the sans-serif font family */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Styles the container element to have 100% width, minimum height of 100 viewport height units, 8% left and right padding, box-sizing to include border, and hidden overflow */
+.container {
+  width: 100%;
+  /* min-height: 100vh; */
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden; /*The CSS property overflow: hidden; specifies what should happen if the content of an element exceeds the size of that element's box. In this case, it is applied to the .container class, and it means that any content that overflows the box will be hidden and not visible to the user. This can be useful for creating a cleaner layout by hiding excess content or preventing it from spilling out of its container.*/
+}
+/* Styles the navbar element to have 100% width, flex display, and align items centered */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* Styles the logo element to have 50px width, cursor pointer, and top and bottom margins of 30px
+/* Styling Logo */
+.logo {
+  cursor: pointer;
+  margin: 20px 0;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+}
+/* Styles the menu icon element to have 25px width, cursor pointer, and not displayed */
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+/* Styles the navigation element to flex 1 and align its text to the right */
+nav {
+  flex: 1; /*The flex: 1 property is used to distribute free space on a flex container among its flex items. It is a shorthand property that sets three individual properties: flex-grow, flex-shrink, and flex-basis.
+    When used alone, flex: 1 is equivalent to flex-grow: 1; flex-shrink: 1; flex-basis: 0%;, which means that the item will grow or shrink equally with other flex items in the container, and its initial size will be 0%. This property is commonly used to make a flex item fill the remaining space in the container.*/
+  text-align: right;
+}
+/* Styles the navigation unordered list elements to have no bullet points, display as inline blocks, and margin right of 30px */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+/* Styles the navigation unordered list links to have no text decoration, black text color, and 14px font size */
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+/* Styles the navigation unordered list links on hover to have a text color of #ff5ea2 */
+nav ul li a:hover {
+  text-decoration: underline 3px #2e8b57;
+}
+/* Styles the row element to display as flex, justify its content space between, align its items centered, and have top and bottom margins of 100px */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+/* Styles the col-1 element to flex basis of 40%, position relative, and left margin of 50px */
+.col-1 {
+  flex-basis: 50%; /*flex-basis is a CSS property that sets the initial main size of a flex item, before any remaining space is distributed. In this specific case, flex-basis: 40%; sets the initial width of an element to be 40% of the available space in the flex container.
+    For example, if the parent container has a width of 1000px, a child element with flex-basis: 40%; would initially have a width of 400px. However, if there is not enough space in the flex container for all the flex items to be displayed at their initial size, the flex items will be shrunk or stretched to fit the available space based on their flex-grow and flex-shrink properties.*/
+  position: relative;
+  margin-left: 50px;
+}
+/* Styles the col-1 h2 element to have 54px font size */
+.col-1 h2 {
+  font-size: 64px;
+}
+/* Styles the col-1 h3 element to have 30px font size, #707070 color, 100 font weight, and top margin of 20px and bottom margin of 10px */
+.col-1 h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 18px;
+  color: #2e2e2e;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+/* Styles the col-1 p element to have 16px font size, #b7b7b7 color, 100 font weight */
+.col-1 p {
+  padding: 10px 0 20px 0;
+  font-size: 16px;
+  color: #939393;
+  font-weight: 100;
+}
+.law-color, 
+.contact-color {
+  color: #2e8b57;
+}
+/* Set the styles for all button elements */
+#hero-btn {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #98FB98, #2e8b57);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+}
+/* Set the styles for all img elements within button elements */
+#hero-btn img {
+  width: 30px;
+  display: none;
+}
+/* When the button is hovered, display the img */
+#hero-btn:hover img {
+  display: block;
+}
+/* When the button is hovered, increase the width and center its contents */
+#hero-btn:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* The ::after pseudo-class is used to add a gradient background to an empty content (vertical line) that is positioned after the .col-1 element. The gradient background spans a width of 10px and a height of 57%. It is positioned absolutely using left: -40px and top: 8px.
+    ::after is a CSS pseudo-element that is used to add content after an element. It is used to create an additional element that is not present in the markup but can be styled using CSS. */
+.col-1::after {
+  content: '';
+  width: 10px;
+  height: 57%;
+  background: linear-gradient( #98FB98, #2e8b57);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+/* Set the styles for all elements with the class .col-2 */
+.col-2 {
+  position: relative;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+/* Set the styles for all elements with the class .controller within elements with the class .col-2 */
+.col-2 .lady {
+  width: 80%;
+  margin-left: 60px;
+}
+/* Legal Services Section */
+/* Styles the legal container element to have 100% width, minimum height of 100 viewport height units, 8% left and right padding, box-sizing to include border, and hidden overflow */
+.legal-container, .contact-container {
+  width: 100%;
+  /* min-height: 100vh; */
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden; /*The CSS property overflow: hidden; specifies what should happen if the content of an element exceeds the size of that element's box. In this case, it is applied to the .container class, and it means that any content that overflows the box will be hidden and not visible to the user. This can be useful for creating a cleaner layout by hiding excess content or preventing it from spilling out of its container.*/
+}
+/* Styles the col-1 element to flex basis of 40%, position relative, and left margin of 50px */
+.legal-col-1 {
+  flex-basis: 40%; 
+  position: relative;
+  margin-left: 50px;
+}
+.legal-col-1 h5 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+/* Styles the col-1 h2 element to have 54px font size */
+.legal-col-1 h2 {
+  font-size: 50px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+.legal-col-1 img {
+  width: 80%;
+  padding: 50px 0;
+}
+.legal-col-2 {
+  position: relative;
+  flex-basis: 50%;
+  /* display: flex; */
+  /* align-items: start; */
+}
+.legal-col-3 img {
+  padding: 10px 0;
+  width: 6%;
+  align-items: start !important;
+}
+.legal-col-3 p {
+  padding: 10px 0 20px 0;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 100;
+}
+
+/* Testimonials */
+.outerdiv {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerdiv {
+  transform: scale(0.9);
+  margin: 20px 0;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-rows: repeat(2, 22rem);
+  grid-template-columns: repeat(4, 17rem);
+}
+.eachdiv {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 20px #6d6b6b6b;
+  color: white;
+}
+.div1 {
+  background: #000;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-repeat: no-repeat;
+  background-position-x: 25rem;
+}
+.div2 {
+  background: #2e8b57;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.div3 {
+  background: white;
+  grid-column: 4/5;
+  grid-row: 1/3;
+  color: black;
+}
+.div4 {
+  background: white;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: black;
+}
+.div5 {
+  background: #262626;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.userdetails {
+  display: flex;
+}
+.imgbox {
+  margin-right: 1rem;
+}
+.imgbox img {
+  border-radius: 50%;
+  width: 2rem;
+  border: 2px solid #cec5c5;
+}
+.detbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detbox p {
+  margin: 0;
+}
+.detbox .name {
+  color: hsl(0, 0%, 81%);
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+.detbox .name.dark {
+  color: #49505a;
+}
+.detbox .designation {
+  /* color: hsl(0, 0%, 81%); */
+  color: white;
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+.detbox .designation.dark {
+  color: #49505a;
+}
+.review h4 {
+  font-size: 21px;
+  color: #f5f5f5;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0.8rem 0;
+}
+.review.dark h4 {
+  color: #4b5258;
+}
+.review p {
+  font-size: 0.90rem;
+  color: #fff;
+  font-weight: 500;
+  opacity: 50%;
+  line-height: 1.5;
+}
+.review.dark p {
+  color: #0e0e0e;
+}
+.attribution {
+  font-size: 1rem;
+  line-height: 1.5;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+}
+.attribution a {
+  text-decoration: none;
+}
+
+/* About */
+.about-container {
+  width: 100%;
+  /* min-height: 100vh; */
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* Styles the col-1 element to flex basis of 40%, position relative, and left margin of 50px */
+.about-col-1 {
+  flex-basis: 90%; 
+  position: relative;
+  margin-left: 50px;
+}
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 10px 0;
+}
+.about-col-1 h5 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+/* Styles the col-1 h2 element to have 54px font size */
+.about-col-1 h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.about-col-1 p {
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  color: #525252;
+  font-weight: 100;
+}
+.about-col-2 {
+  position: relative;
+  /* flex-basis: 60%; */
+  color: #525252;
+  font-weight: 100;
+}
+.row4 {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 21px 30px;
+}
+.about-col-2 p {
+  padding: 10px 20px;
+  color: #525252;
+}
+
+/* Newsletter Section */
+.newsletter-container {
+  width: 100%;
+  background: #f5f5f5;
+}
+.newsletter {
+  flex-basis: 90%; 
+  position: relative;
+  margin: 50px;
+  padding: 75px;
+  text-align: center;
+}
+.newsletter h1, p {
+  padding: 7px;
+}
+.newsletter p {
+  color: #525252;
+  font-size: 14px;
+}
+.newsletter-signup {
+  padding: 25px 0 0 0;
+}
+.secondary-btn {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #98FB98, #2e8b57);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+}
+.secondary-btn:hover {
+  background: #000;
+}
+.newsletter-signup input {
+  margin: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #525252;
+  -webkit-transition: 0.5s;
+  width: 250px;
+  outline: none;
+}
+.newsletter-signup input {
+  border-color: #000;
+}
+.newsletter-signup input:focus::placeholder {
+        color: transparent;
+}
+#privacy-notice {
+  font-size: 12px;
+  padding: 0;
+  margin-left: -75px;
+}
+#privacy-notice span {
+  text-decoration: underline;
+}
+
+/* Contact */
+.row5 {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  align-items: center;
+}
+.contact-col-1 {
+  flex-basis: 40%; 
+  position: relative;
+  margin-left: 50px;
+  line-height: 60px;
+}
+.contact-col-1 h1 {
+  font-size: 56px;
+}
+.contact-col-1 h5 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.contact-info img {
+  width: 5%;
+}
+
+/* Contact Form */
+::selection{
+  color: #fff;
+  background: #2e8b57;
+}
+.wrapper{
+  width: 50%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 15px rgba(0,0,0,0.05);
+}
+.wrapper form{
+  margin: 35px 30px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+form .dbl-field{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.dbl-field .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+.wrapper form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #cec5c5;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.wrapper form i{
+    position:absolute;
+    bottom:7px;
+    left:10px;
+    width:30px;
+    height:20px;
+    color: #cec5c5;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.field input::placeholder,
+.message textarea::placeholder{
+  color: #cec5c5;
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid #2e8b57;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #2e8b57;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 92%;
+  min-width: 86%;
+  padding: 15px 20px 0 16px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: linear-gradient(to right, #98FB98, #2e8b57);
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
+.button-area button:hover{
+  background: #000;
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+
+/* Footer Section */
+.footer-container{
+	max-width: 1120px;
+	margin:auto;
+}
+.row6{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 20px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #2e8b57;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: white;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: white;
+}
+/* Media query for screens with a maximum width of 750px */
+@media only screen and (max-width: 750px) {
+  .col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#98FB98, #2e8b57);
+    position: absolute;
+    left: -23px;
+    top: 8px;
+  }
+  /* Set the styles for all ul elements within nav elements */
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#98FB98, #2e8b57);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  /* Set the styles for all li elements within ul elements within nav elements */
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* Set the styles for all a elements within li elements within ul elements within nav elements */
+  nav ul li a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 20px 0;
+  }
+  .row2 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .col-2,
+  .legal-col-2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .col-1 {
+    flex-basis: 100%;
+    margin-left: 15px;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .legal-col-1, .about-col-1 {
+    flex-basis: 100%;
+    margin: 40px 0 0 0;
+  }
+  .legal-col-1 h2 {
+    font-size: 37px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+  .legal-col-1 img {
+    width: 85%;
+    padding: 15px 0;
+    align-items: center;
+  }
+  .legal-col-3 img {
+    width: 10%;
+  }
+  .row4, .newsletter {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-basis: 100%;
+  }
+  .newsletter-container {
+    margin-top: 40px;
+  }
+  .newsletter {
+    padding: 30px;
+  }
+  .about-col-2 p {
+    padding: 10px 0;
+  }
+  .newsletter p {
+    font-size: 12px;
+  }
+  .newsletter input {
+    width: 200px;
+  }
+  #newsletter-btn {
+    width: 225px;
+  }
+  #privacy-notice {
+    padding-top: 10px;
+    margin: 0 43px;
+    font-size: 8px;
+  }
+  .wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .wrapper header{
+    text-align: center;
+  }
+  .wrapper form{
+    margin: 35px 20px;
+  }
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  form .message textarea{
+    resize: none;
+    max-width: 80%;
+  }
+  form .button-area{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+  .button-area span{
+    margin: 20px 0 0;
+    text-align: center;
+  } 
+  .row5 {
+    flex-direction: column;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .contact-container {
+    padding-left: 8%;
+  }
+  .contact-col-1 {
+    margin: 0;
+    padding-top: 50px;
+  }
+  .contact-col-1 h1 {
+    font-size: 36px;
+    line-height: 35px;
+  }
+  .contact-info {
+    display: block;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+  }
+  .contact-info img {
+    display: none;
+  }
+}
+/* Testimonials */
+@media only screen and (max-width: 1000px) {
+  .innerdiv {
+    transform: scale(0.7);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .innerdiv {
+    transform: scale(0.6);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .div1 {
+    background-position-x: 10rem;
+  }
+  .innerdiv {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    margin: 2rem;
+    margin-bottom: 5rem;
+  }
+  .attribution {
+    position: relative;
+  }
+}
+/* Responsive Footer */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
