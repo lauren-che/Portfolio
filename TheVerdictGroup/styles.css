@@ -91,7 +91,7 @@ nav ul li a:hover {
   color: #939393;
   font-weight: 100;
 }
-.law-color, 
+.law-color,
 .contact-color {
   color: #2e8b57;
 }
@@ -102,7 +102,7 @@ nav ul li a:hover {
   padding: 12px 10px;
   outline: none;
   color: #fff;
-  background: linear-gradient(to right, #98FB98, #2e8b57);
+  background: linear-gradient(to right, #98fb98, #2e8b57);
   border-radius: 6px;
   cursor: pointer;
   transition: width 0.5;
@@ -131,7 +131,7 @@ nav ul li a:hover {
   content: '';
   width: 10px;
   height: 57%;
-  background: linear-gradient( #98FB98, #2e8b57);
+  background: linear-gradient(#98fb98, #2e8b57);
   position: absolute;
   left: -40px;
   top: 8px;
@@ -150,7 +150,8 @@ nav ul li a:hover {
 }
 /* Legal Services Section */
 /* Styles the legal container element to have 100% width, minimum height of 100 viewport height units, 8% left and right padding, box-sizing to include border, and hidden overflow */
-.legal-container, .contact-container {
+.legal-container,
+.contact-container {
   width: 100%;
   /* min-height: 100vh; */
   padding-left: 8%;
@@ -160,7 +161,7 @@ nav ul li a:hover {
 }
 /* Styles the col-1 element to flex basis of 40%, position relative, and left margin of 50px */
 .legal-col-1 {
-  flex-basis: 40%; 
+  flex-basis: 40%;
   position: relative;
   margin-left: 50px;
 }
@@ -203,58 +204,67 @@ nav ul li a:hover {
 }
 
 /* Testimonials */
-.outerdiv {
+.testimonial-header {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 60px 0 0 0;
+}
+.testimonial-header p {
+  color: #6d6d6d;
+  font-weight: 100;
+}
+.testimonial-container {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.innerdiv {
+.testimonial-container-inner {
   transform: scale(0.9);
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   display: grid;
   grid-gap: 1.5rem;
   grid-template-rows: repeat(2, 22rem);
   grid-template-columns: repeat(4, 17rem);
 }
-.eachdiv {
+.each-testimonial {
   padding: 1rem 2rem;
   border-radius: 0.8rem;
   box-shadow: 5px 5px 20px #6d6b6b6b;
   color: white;
 }
-.div1 {
+.testimonial1 {
   background: #000;
   grid-column: 1/3;
   grid-row: 1/2;
   background-repeat: no-repeat;
   background-position-x: 25rem;
 }
-.div2 {
+.testimonial2 {
   background: #2e8b57;
   grid-column: 3/4;
   grid-row: 1/2;
 }
-.div3 {
+.testimonial3 {
   background: white;
   grid-column: 4/5;
   grid-row: 1/3;
   color: black;
 }
-.div4 {
+.testimonial4 {
   background: white;
   grid-column: 1/2;
   grid-row: 2/3;
   color: black;
 }
-.div5 {
+.testimonial5 {
   background: #262626;
   grid-column: 2/4;
   grid-row: 2/3;
 }
-.userdetails {
+.testimonial-details {
   display: flex;
 }
 .imgbox {
@@ -265,30 +275,30 @@ nav ul li a:hover {
   width: 2rem;
   border: 2px solid #cec5c5;
 }
-.detbox {
+.details-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.detbox p {
+.details-box p {
   margin: 0;
 }
-.detbox .name {
+.details-box .name {
   color: hsl(0, 0%, 81%);
   font-size: 0.9rem;
   margin-bottom: 0.1rem;
   font-weight: 600;
 }
-.detbox .name.dark {
+.details-box .name.dark {
   color: #49505a;
 }
-.detbox .designation {
+.details-box .designation {
   /* color: hsl(0, 0%, 81%); */
   color: white;
   opacity: 50%;
   font-size: 0.8rem;
 }
-.detbox .designation.dark {
+.details-box .designation.dark {
   color: #49505a;
 }
 .review h4 {
@@ -302,7 +312,7 @@ nav ul li a:hover {
   color: #4b5258;
 }
 .review p {
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   color: #fff;
   font-weight: 500;
   opacity: 50%;
@@ -326,15 +336,13 @@ nav ul li a:hover {
 /* About */
 .about-container {
   width: 100%;
-  /* min-height: 100vh; */
-  padding-left: 8%;
-  padding-right: 8%;
+  padding: 3% 8% 1% 8%;
   box-sizing: border-box;
   overflow: hidden;
 }
 /* Styles the col-1 element to flex basis of 40%, position relative, and left margin of 50px */
 .about-col-1 {
-  flex-basis: 90%; 
+  flex-basis: 90%;
   position: relative;
   margin-left: 50px;
 }
@@ -383,13 +391,14 @@ nav ul li a:hover {
   background: #f5f5f5;
 }
 .newsletter {
-  flex-basis: 90%; 
+  flex-basis: 90%;
   position: relative;
   margin: 50px;
   padding: 75px;
   text-align: center;
 }
-.newsletter h1, p {
+.newsletter h1,
+p {
   padding: 7px;
 }
 .newsletter p {
@@ -405,7 +414,7 @@ nav ul li a:hover {
   padding: 12px 10px;
   outline: none;
   color: #fff;
-  background: linear-gradient(to right, #98FB98, #2e8b57);
+  background: linear-gradient(to right, #98fb98, #2e8b57);
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
@@ -427,7 +436,7 @@ nav ul li a:hover {
   border-color: #000;
 }
 .newsletter-signup input:focus::placeholder {
-        color: transparent;
+  color: transparent;
 }
 #privacy-notice {
   font-size: 12px;
@@ -439,6 +448,9 @@ nav ul li a:hover {
 }
 
 /* Contact */
+.contact-container {
+  padding-bottom: 3%;
+}
 .row5 {
   display: flex;
   justify-content: space-between;
@@ -446,7 +458,7 @@ nav ul li a:hover {
   align-items: center;
 }
 .contact-col-1 {
-  flex-basis: 40%; 
+  flex-basis: 40%;
   position: relative;
   margin-left: 50px;
   line-height: 60px;
@@ -471,35 +483,48 @@ nav ul li a:hover {
 }
 
 /* Contact Form */
-::selection{
+.d-none {
+  display: none;
+}
+::selection {
   color: #fff;
   background: #2e8b57;
 }
-.wrapper{
+.contact {
   width: 50%;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 10px 10px 10px 15px rgba(0,0,0,0.05);
+  box-shadow: 10px 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
-.wrapper form{
+.success {
+  text-align: center;
+}
+.success h1 {
+  font-size: 24px;
+}
+.success p {
+  font-size: 14px;
+  color: #525252;
+}
+.contact form {
   margin: 35px 30px;
 }
-.wrapper form.disabled{
+.contact form.disabled {
   pointer-events: none;
   opacity: 0.7;
 }
-form .dbl-field{
+form .dbl-field {
   display: flex;
   margin-bottom: 25px;
   justify-content: space-between;
 }
-.dbl-field .field{
+.dbl-field .field {
   height: 50px;
   display: flex;
   position: relative;
   width: calc(100% / 2 - 13px);
 }
-.wrapper form i{
+.contact form i {
   position: absolute;
   top: 50%;
   left: 18px;
@@ -508,18 +533,18 @@ form .dbl-field{
   pointer-events: none;
   transform: translateY(-50%);
 }
-.wrapper form i{
-    position:absolute;
-    bottom:7px;
-    left:10px;
-    width:30px;
-    height:20px;
-    color: #cec5c5;
-    pointer-events: none;
-    transform: translateY(-50%);
+.contact form i {
+  position: absolute;
+  bottom: 7px;
+  left: 10px;
+  width: 30px;
+  height: 20px;
+  color: #cec5c5;
+  pointer-events: none;
+  transform: translateY(-50%);
 }
 form .field input,
-form .message textarea{
+form .message textarea {
   width: 100%;
   height: 100%;
   outline: none;
@@ -529,44 +554,44 @@ form .message textarea{
   border: 1px solid #ccc;
 }
 .field input::placeholder,
-.message textarea::placeholder{
+.message textarea::placeholder {
   color: #cec5c5;
 }
 .field input:focus,
-.message textarea:focus{
+.message textarea:focus {
   padding-left: 47px;
   border: 2px solid #2e8b57;
 }
 .field input:focus ~ i,
-.message textarea:focus ~ i{
+.message textarea:focus ~ i {
   color: #2e8b57;
 }
-form .message{
+form .message {
   position: relative;
 }
-form .message i{
+form .message i {
   top: 30px;
   font-size: 20px;
 }
-form .message textarea{
+form .message textarea {
   min-height: 130px;
   max-height: 230px;
   max-width: 92%;
   min-width: 86%;
   padding: 15px 20px 0 16px;
 }
-form .message textarea::-webkit-scrollbar{
+form .message textarea::-webkit-scrollbar {
   width: 0px;
 }
-.message textarea:focus{
+.message textarea:focus {
   padding-top: 14px;
 }
-form .button-area{
+form .button-area {
   margin: 25px 0;
   display: flex;
   align-items: center;
 }
-.button-area button{
+.button-area button {
   color: #fff;
   border: none;
   outline: none;
@@ -574,90 +599,90 @@ form .button-area{
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: linear-gradient(to right, #98FB98, #2e8b57);
+  background: linear-gradient(to right, #98fb98, #2e8b57);
   transition: background 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1.25px;
 }
-.button-area button:hover{
+.button-area button:hover {
   background: #000;
 }
-.button-area span{
+.button-area span {
   font-size: 17px;
   margin-left: 30px;
   display: none;
 }
 
 /* Footer Section */
-.footer-container{
-	max-width: 1120px;
-	margin:auto;
+.footer-container {
+  max-width: 1120px;
+  margin: auto;
 }
-.row6{
-	display: flex;
-	flex-wrap: wrap;
+.row6 {
+  display: flex;
+  flex-wrap: wrap;
 }
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-.footer{
-	background-color: #000;
-    padding: 70px 0;
+.footer {
+  background-color: #000;
+  padding: 70px 0;
 }
-.footer-col{
-   width: 20%;
-   padding: 0 20px;
+.footer-col {
+  width: 20%;
+  padding: 0 20px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: white;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #2e8b57;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #2e8b57;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: white;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
-	color: white;
-	padding-left: 8px;
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 8px;
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: white;
-	transition: all 0.5s ease;
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: white;
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: white;
 }
 /* Media query for screens with a maximum width of 750px */
 @media only screen and (max-width: 750px) {
@@ -665,7 +690,7 @@ ul{
     content: '';
     width: 10px;
     height: 57%;
-    background: linear-gradient(#98FB98, #2e8b57);
+    background: linear-gradient(#98fb98, #2e8b57);
     position: absolute;
     left: -23px;
     top: 8px;
@@ -673,7 +698,7 @@ ul{
   /* Set the styles for all ul elements within nav elements */
   nav ul {
     width: 100%;
-    background: linear-gradient(#98FB98, #2e8b57);
+    background: linear-gradient(#98fb98, #2e8b57);
     position: absolute;
     top: 75px;
     right: 0;
@@ -717,7 +742,8 @@ ul{
   .col-1 h2 {
     font-size: 35px;
   }
-  .legal-col-1, .about-col-1 {
+  .legal-col-1,
+  .about-col-1 {
     flex-basis: 100%;
     margin: 40px 0 0 0;
   }
@@ -735,7 +761,8 @@ ul{
   .legal-col-3 img {
     width: 10%;
   }
-  .row4, .newsletter {
+  .row4,
+  .newsletter {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -765,42 +792,42 @@ ul{
     margin: 0 43px;
     font-size: 8px;
   }
-  .wrapper {
+  .contact {
     width: 100%;
     justify-content: center;
   }
-  .wrapper header{
+  .wrapper header {
     text-align: center;
   }
-  .wrapper form{
+  .wrapper form {
     margin: 35px 20px;
   }
-  form .dbl-field{
+  form .dbl-field {
     flex-direction: column;
     margin-bottom: 0px;
   }
-  form .dbl-field .field{
+  form .dbl-field .field {
     width: 100%;
     height: 45px;
     margin-bottom: 20px;
   }
-  form .message textarea{
+  form .message textarea {
     resize: none;
     max-width: 80%;
   }
-  form .button-area{
+  form .button-area {
     margin-top: 20px;
     flex-direction: column;
   }
-  .button-area button{
+  .button-area button {
     width: 100%;
     padding: 11px 0;
     font-size: 16px;
   }
-  .button-area span{
+  .button-area span {
     margin: 20px 0 0;
     text-align: center;
-  } 
+  }
   .row5 {
     flex-direction: column;
     margin: 0;
@@ -829,20 +856,20 @@ ul{
 }
 /* Testimonials */
 @media only screen and (max-width: 1000px) {
-  .innerdiv {
+  .testimonial-container-inner {
     transform: scale(0.7);
   }
 }
 @media only screen and (max-width: 800px) {
-  .innerdiv {
+  .testimonial-container-inner {
     transform: scale(0.6);
   }
 }
 @media only screen and (max-width: 600px) {
-  .div1 {
+  .testimonial1 {
     background-position-x: 10rem;
   }
-  .innerdiv {
+  .testimonial-container-inner {
     display: flex;
     flex-direction: column;
     transform: scale(1);
@@ -854,14 +881,14 @@ ul{
   }
 }
 /* Responsive Footer */
-@media(max-width: 767px){
-  .footer-col{
+@media (max-width: 767px) {
+  .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
 }
-}
-@media(max-width: 574px){
-  .footer-col{
+@media (max-width: 574px) {
+  .footer-col {
     width: 100%;
-}
+  }
 }

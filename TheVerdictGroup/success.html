@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Verdict Group</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/./images/favicon.png"
+    />
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d92ace0944.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Creates a container div for the webpage -->
+    <div class="container">
+      <!-- Creates a navbar with a logo, navigation menu, and a menu icon -->
+      <div class="navbar">
+        <a class="logo" href="">THE VERDICT GROUP</a>
+        <nav>
+          <ul id="menuList">
+            <li><a href="#legal-services">Legal Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/menu.png"
+          class="menu-icon"
+          alt="menu-icon"
+          onclick="toggleMenu()"
+        />
+      </div>
+
+      <!-- Creates a row with two columns, displaying product information and an image of a game controller -->
+      <div class="row">
+        <div class="col-1">
+          <h4>YOUR LEGAL PARTNER, YOUR LEGAL VICTORY</h4>
+          <h2>
+            Real Estate, Business &amp;
+            <span class="law-color">Corporate Law</span>
+          </h2>
+          <p>
+            We are your premier legal partner for all your real estate,
+            business, and corporate law needs. Our mission is simple: to provide
+            our clients with exceptional legal representation and help them
+            achieve their desired outcomes.
+          </p>
+          <button id="hero-btn" type="button">
+            Free Consult<img src="./images/arrow.png" />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="./images/hero.svg" class="lady" alt="lady image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Legal Services -->
+    <div id="legal-services" class="legal-container">
+      <div class="row2">
+        <div class="legal-col-1">
+          <h5>Legal Services</h5>
+          <h2>Partner with us for legal success.</h2>
+          <img src="./images/legal.svg" alt="legal images" />
+        </div>
+        <div class="legal-col-2">
+          <div class="row2">
+            <div class="legal-col-3">
+              <img src="./images/business.svg" alt="" />
+              <h4>Real Estate Law</h4>
+              <p>
+                We provide expert legal guidance for all of your real estate
+                needs. From buying and selling property to leasing and zoning,
+                our attorneys ensure your interests are protected every step of
+                the way. We offer efficient solutions for all types of real
+                estate transactions and disputes.
+              </p>
+              <img src="./images/suitcase.svg" alt="" />
+              <h4>Business Law</h4>
+              <p>
+                We provide expert legal guidance for all of your real estate
+                needs. From buying and selling property to leasing and zoning,
+                our attorneys ensure your interests are protected every step of
+                the way. We offer efficient solutions for all types of real
+                estate transactions and disputes.
+              </p>
+              <img src="./images/gavel.svg" alt="" />
+              <h4>Corporate Law</h4>
+              <p>
+                We provide expert legal guidance for all of your real estate
+                needs. From buying and selling property to leasing and zoning,
+                our attorneys ensure your interests are protected every step of
+                the way. We offer efficient solutions for all types of real
+                estate transactions and disputes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonials" class="outerdiv">
+      <div class="innerdiv">
+        <!-- div1 -->
+        <div class="div1 eachdiv">
+          <div class="userdetails">
+            <div class="imgbox">
+              <img
+                src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detbox">
+              <p class="name">Terrence Johnson</p>
+              <p class="designation">CAO, Coastal Estates</p>
+            </div>
+          </div>
+          <div class="review">
+            <h4>Expertise and Dedication at its Finest</h4>
+            <p>
+              "I had the pleasure of working with The Verdict Group for a
+              complex real estate transaction. Their expertise and dedication
+              were evident from start to finish. They kept me informed
+              throughout the process and fought for my best interests every step
+              of the way. I highly recommend them to anyone in need of legal
+              representation. Throughout the transaction, their communication
+              was outstanding, and they responded promptly to any questions or
+              concerns I had. Their team demonstrated a deep understanding of
+              the intricacies of real estate law, and I was impressed by their
+              attention to detail."
+            </p>
+          </div>
+        </div>
+        <!-- div2 -->
+        <div class="div2 eachdiv">
+          <div class="userdetails">
+            <div class="imgbox">
+              <img
+                src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detbox">
+              <p class="name">Jonathan Walters</p>
+              <p class="designation">CEO, Verdney</p>
+            </div>
+          </div>
+          <div class="review">
+            <h4>Outstanding Results in Corporate Law</h4>
+            <p>
+              "The Verdict Group helped our company navigate a complicated
+              corporate law matter. They provided us with expert legal advice
+              and secured a favorable outcome for us."
+            </p>
+          </div>
+        </div>
+        <!-- div3 -->
+        <div class="div3 eachdiv">
+          <div class="userdetails">
+            <div class="imgbox">
+              <img
+                src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detbox">
+              <p class="name dark">Kira Whittle</p>
+              <p class="designation dark">Sr. VP Legal, The Popup</p>
+            </div>
+          </div>
+          <div class="review dark">
+            <h4>Excellent Business Law Representation</h4>
+            <p>
+              "I was in need of legal representation for a business law matter,
+              and The Verdict Group came highly recommended. From the first
+              consultation, I was impressed by their knowledge and
+              professionalism. Their team took the time to listen to my concerns
+              and provided tailored advice to meet my specific needs. Throughout
+              the process, their team was responsive and kept me informed of any
+              updates or developments. They were proactive in identifying
+              potential issues and providing me with strategies to address them.
+              I appreciated their attention to detail and the time they took to
+              ensure that I understood all of my options."
+            </p>
+          </div>
+        </div>
+        <!-- div4 -->
+        <div class="div4 eachdiv">
+          <div class="userdetails">
+            <div class="imgbox">
+              <img
+                src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detbox">
+              <p class="name dark">Jeanette Harmon</p>
+              <p class="designation dark">CEO, Harmon Living</p>
+            </div>
+          </div>
+          <div class="review dark">
+            <h4>Trusted and Reliable Legal Partner</h4>
+            <p>
+              "The Verdict Group is a trusted legal partner for us. They provide
+              excellent legal advice and representation in real estate,
+              business, and corporate law matters."
+            </p>
+          </div>
+        </div>
+        <!-- div5 -->
+        <div class="div5 eachdiv">
+          <div class="userdetails">
+            <div class="imgbox">
+              <img
+                src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                alt=""
+              />
+            </div>
+            <div class="detbox">
+              <p class="name">Patrick Abrams</p>
+              <p class="designation">VP Finance, Pix Properties</p>
+            </div>
+          </div>
+          <div class="review">
+            <h4>Expert Negotiation Skills in Real Estate</h4>
+            <p>
+              "We had the pleasure of working with The Verdict Group for a
+              complex real estate negotiation. From the outset, their team
+              demonstrated exceptional negotiation skills and provided valuable
+              advice on structuring the deal to meet our needs. They worked
+              tirelessly to protect our interests and ensure that the
+              transaction was fair and equitable. Throughout the process, their
+              team was communicative and responsive, keeping us informed of any
+              developments and answering our questions promptly. They
+              demonstrated a deep understanding of real estate law and were able
+              to identify and address potential issues before they became
+              problematic."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Story -->
+    <div id="about" class="about-container">
+      <div class="row3">
+        <div class="about-col-1">
+          <h5>Our Story</h5>
+          <h2>The legal professionals you can trust</h2>
+          <p>
+            At The Verdict Group, we have been providing expert legal services
+            for real estate, business, and corporate law matters for over 25
+            years. Our team of experienced attorneys has a deep understanding of
+            the complex laws and regulations surrounding these areas of law, and
+            is dedicated to ensuring that our clients' interests are protected
+            every step of the way.
+          </p>
+        </div>
+      </div>
+      <div class="row4">
+        <div class="about-col-2">
+          <p>
+            The Verdict Group was founded with a simple but powerful goal in
+            mind: to provide top-tier legal representation to clients across a
+            range of practice areas. Our team of experienced attorneys is
+            dedicated to providing personalized, results-driven legal services
+            to help our clients achieve their goals, whether they are
+            individuals, small businesses, or large corporations.
+          </p>
+
+          <p>
+            Since our founding, we have established a reputation for excellence
+            in the legal community. Our attorneys have a deep understanding of
+            the nuances of real estate, business, and corporate law, and we have
+            helped countless clients navigate complex legal issues with skill
+            and expertise. Our proven track record of success speaks for itself.
+          </p>
+        </div>
+        <div class="about-col-2">
+          <p>
+            At The Verdict Group, we pride ourselves on our personalized
+            approach to legal representation. We understand that every client is
+            unique and has specific needs, and we work closely with each client
+            to tailor our services to their individual situation. Our goal is to
+            build lasting relationships with our clients based on trust,
+            communication, and outstanding results.
+          </p>
+          <p>
+            We believe that legal representation should be accessible to
+            everyone, regardless of their background or circumstances. That's
+            why we offer flexible fee arrangements and work hard to make our
+            services affordable and approachable. Our commitment to our clients
+            is unwavering, and we are dedicated to helping them achieve their
+            legal goals in the most effective and efficient way possible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-container">
+      <div class="newsletter">
+        <h1>Sign Up For Our Newsletter</h1>
+        <p>
+          Stay informed on the latest legal updates and industry insights by
+          joining our newsletter.
+        </p>
+        <div class="newsletter-signup">
+          <input
+            type="text"
+            id="newsletter-input"
+            placeholder="enter your email"
+          />
+          <button class="secondary-btn" type="button">SUBSCRIBE</button>
+        </div>
+        <p id="privacy-notice">
+          We care and will never share your email. View our
+          <span>privacy policy</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-container">
+      <div class="row5">
+        <div class="contact-col-1">
+          <h5>Contact</h5>
+          <h1>
+            Any questions? Contact us for a
+            <span class="contact-color">Free Legal Consultation</span>
+          </h1>
+          <div class="contact-info">
+            <p>+1 (555) 555-0153</p>
+            <img src="./images/contact.svg" alt="legal images" />
+            <p>contact@theverdictgroup.com</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div id="success-message" class="success">
+          <h1>Your Message Has Been Received!</h1>
+          <p>
+            Please allow our team up to 12 hours to respond back to your message
+            via email
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row6">
+          <div class="footer-col">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#legal-services">legal services</a></li>
+              <li><a href="#testimonials">testimonials</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Assistance</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">payment options</a></li>
+              <li><a href="#">Payment Portal</a></li>
+              <li><a href="#">Payment Support</a></li>
+              <!-- <li><a href="#">order status</a></li> -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>contact</h4>
+            <ul>
+              <li><a href="#">+1 (555) 555-0153</a></li>
+              <li><a href="#">contact@theverdictgroup.com</a></li>
+              <li><a href="#">4 Main St. new york, NY 55234</a></li>
+              <!-- <li><a href="#">dress</a></li> -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- link to js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
