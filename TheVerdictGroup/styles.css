@@ -207,7 +207,7 @@ nav ul li a:hover {
 .testimonial-header {
   background: #f5f5f5;
   text-align: center;
-  padding: 60px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .testimonial-header p {
   color: #6d6d6d;
@@ -223,7 +223,7 @@ nav ul li a:hover {
 }
 .testimonial-container-inner {
   transform: scale(0.9);
-  margin: 20px 0 10px 0;
+  margin: 20px 0 30px 0;
   display: grid;
   grid-gap: 1.5rem;
   grid-template-rows: repeat(2, 22rem);
@@ -684,6 +684,20 @@ ul {
   color: #24262b;
   background-color: white;
 }
+
+/* Privacy Page */
+.privacy-container {
+  width: 100%;
+    padding: 3% 8% 1% 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.privacy-container p {
+  padding: 10px 0 30px 0;
+    font-size: 16px;
+    color: #525252;
+    font-weight: 100;
+}
 /* Media query for screens with a maximum width of 750px */
 @media only screen and (max-width: 750px) {
   .col-1::after {
@@ -787,10 +801,10 @@ ul {
   #newsletter-btn {
     width: 225px;
   }
-  #privacy-notice {
+  .privacy-notice {
     padding-top: 10px;
     margin: 0 43px;
-    font-size: 8px;
+    font-size: 8px; 
   }
   .contact {
     width: 100%;
