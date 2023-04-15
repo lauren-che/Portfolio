@@ -1,6 +1,6 @@
 # Project Title: The Verdict Group
 
-<img src='Cover.png' width=45%>
+<img src='Cover.png' width=75%>
 
 
 [Live Demo](https://cheery-valkyrie-ceffbf.netlify.app)
